@@ -1,16 +1,21 @@
 <template>
   <div id="app">
     <OrgChart />
+    <Test />
   </div>
 </template>
 
 <script>
-import OrgChart from './components/OrgChart.vue'
+//import OrgChart from './components/OrgChart.vue'
+import Test from './components/Test.vue'
 
 export default {
   name: 'app',
+
   components: {
-    OrgChart
+   // OrgChart,
+    Test
+
   }
 }
 </script>
@@ -23,5 +28,18 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+  html, body{
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin:0;
+  overflow: hidden;
+  font-family: Helvetica;
+}
+#tree{
+  width:100%;
+  height:100%;
 }
 </style>

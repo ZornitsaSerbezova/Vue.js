@@ -1,12 +1,19 @@
 <template>
-    <h1>OrgChart</h1>
+    <!-- <h1>OrgChart</h1> -->
+      <div id="tree"></div>
 </template>
 
 <script>
-import OrgChart from '@balkangraph/orgchart.js/orgchart'
+//import OrgChart from '@balkangraph/orgchart.js/orgchart'
+
+// var chart = function() {
+//   alert("some data");
+// }
+
 
 export default {
-    data: function() {
+    name: 'tree',
+    data() {
  
         return {
             nodes: [
@@ -23,17 +30,30 @@ export default {
 
 
   methods: {
-    orgchart: function() {
-        var chart = new OrgChart(document.getElementById("tree"), {
-          nodeBinding: {
-            field_0: "name",
-            field_1: "title"          
-          },
-        });
-        chart.load(this.nodes);
-        return this.chart;
+    
+    OrgChart() {
+      alert("sdfasdfsadf");
     }
+
+
+
+    // orgchart: function() {
+    //   alert(this.nodes());
+    //     var chart = new OrgChart(document.getElementById("#tree"), {
+    //       nodeBinding: {
+    //         field_0: "name",
+    //         field_1: "title"          
+    //       },
+    //     });
+    //     chart.load(this.nodes);
+        
+    //     return this.chart;
+    // }
 
   }
 }
 </script>
+
+<style scoped>
+
+</style>
