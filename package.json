@@ -10,6 +10,7 @@
   "dependencies": {
     "@balkangraph/orgchart.js": "^6.1.996",
     "core-js": "^3.4.4",
+    "sum-digit": "^1.0.0",
     "vue": "^2.6.10"
   },
   "devDependencies": {
