@@ -5,11 +5,8 @@
 </template>
 
 <script>
-//import OrgChart from '@balkangraph/orgchart.js/orgchart'
+import OrgChart from '@balkangraph/orgchart.js/orgchart'
 
-// var chart = function() {
-//   alert("some data");
-// }
 
 
 export default {
@@ -31,28 +28,19 @@ export default {
 
 
   methods: {
-    oc: function () {
-      alert(this.nodes)
-    },
+     oc: function () {
+    //   alert(this.nodes)
+   
+      var chart = new OrgChart(document.getElementById("tree"), {
+      });
+      chart.load(this.nodes);
+    }
   },
+  
 
     beforeMount(){
-        this.oc()
+         this.oc()
     },
-
-
-    // orgchart: function() {
-    //   alert(this.nodes());
-    //     var chart = new OrgChart(document.getElementById("#tree"), {
-    //       nodeBinding: {
-    //         field_0: "name",
-    //         field_1: "title"          
-    //       },
-    //     });
-    //     chart.load(this.nodes);
-        
-    //     return this.chart;
-    // }
 
   }
 
