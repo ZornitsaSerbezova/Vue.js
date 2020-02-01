@@ -2,8 +2,16 @@
   <h2>Hello, {{ personName }}!</h2>
 </template>
 <script>
-module.exports = {
-  props: ['personName']
+
+
+export default {
+  name: "HelloPerson",
+  //props: ['personName'],
+  data() {
+    return {
+      personName: "Person"
+    }
+  }
 }
 </script>
 <style scoped>
