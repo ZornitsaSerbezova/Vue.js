@@ -6,7 +6,6 @@
 
 export default {
   name: "HelloPerson",
-  //props: ['personName'],
   data() {
     return {
       personName: "Person"

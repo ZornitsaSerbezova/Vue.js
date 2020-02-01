@@ -1,6 +1,7 @@
 <template>
-    <!-- <h1>OrgChart</h1> -->
+     <!-- <h1>OrgChart</h1> -->
       <div id="tree"></div>
+      <!-- <a @click="oc">Click me!</a> -->
 </template>
 
 <script>
@@ -30,11 +31,14 @@ export default {
 
 
   methods: {
-    
-    OrgChart() {
-      alert("sdfasdfsadf");
-    }
+    oc: function () {
+      alert(this.nodes)
+    },
+  },
 
+    beforeMount(){
+        this.oc()
+    },
 
 
     // orgchart: function() {
@@ -51,7 +55,7 @@ export default {
     // }
 
   }
-}
+
 </script>
 
 <style scoped>

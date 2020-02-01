@@ -1,20 +1,20 @@
 <template>
   <div id="app">
     <OrgChart />
-    <Test />
+    <!-- <Test /> -->
   </div>
 </template>
 
 <script>
-//import OrgChart from './components/OrgChart.vue'
-import Test from './components/Test.vue'
+import OrgChart from './components/OrgChart.vue'
+//import Test from './components/Test.vue'
 
 export default {
   name: 'app',
 
   components: {
-   // OrgChart,
-    Test
+    OrgChart,
+  //  Test
 
   }
 }
