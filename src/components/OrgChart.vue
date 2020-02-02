@@ -32,16 +32,11 @@ export default {
   methods: {
     oc: function(a, b) {
       alert(Sum.Sum(a, b))
-
-      //alert(a+b) // working
-    // var c = Sum.Sum(a, b);
-    //   alert(c)
     }
       
   },
-    
-    //oc: Sum.Sum
-    
+  
+  
     // oc: function () {
       // alert(this.nodes)
         

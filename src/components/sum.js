@@ -3,10 +3,3 @@ export default {
         return a + b;
     } 
 }
-
-// export default {
-    
-//     Sum () {
-//         alert("sdfsadfds")
-//     }    
-// }
