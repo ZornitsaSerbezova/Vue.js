@@ -7,7 +7,7 @@
 <script>
 //import OrgChart from '@balkangraph/orgchart.js/orgchart'
 
-import  Sum  from './sum'
+//import  Sum  from './sum'
 
 
 
@@ -30,7 +30,15 @@ export default {
 
 
   methods: {
-    oc: Sum.Sum
+    oc: function(a, b) {
+    //  alert(Sum.Sum(a, b))
+      alert(a + b)
+    }
+      
+  },
+    
+    //oc: Sum.Sum
+    
     // oc: function () {
       // alert(this.nodes)
         
@@ -39,12 +47,12 @@ export default {
       // });
      
    // }
-  },
+  
   
 
     beforeMount(){
-         this.oc()
-    },
+         this.oc(2, 3)
+    }
 
   }
 
