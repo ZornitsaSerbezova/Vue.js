@@ -1,13 +1,13 @@
 <template>
      <!-- <h1>OrgChart</h1> -->
-      <div id="tree" ref="tree"></div>
+      <div id="tree" ref="tree">sdfsdf</div>
       <!-- <a @click="oc">Click me!</a> -->
 </template>
 
 <script>
 //import OrgChart from '@balkangraph/orgchart.js/orgchart'
 
-//import  Sum  from './sum'
+import  Sum  from './sum'
 
 
 
@@ -30,25 +30,24 @@ export default {
 
 
   methods: {
-    // oc: function(a, b) {
-    //   alert(Sum.Sum(a, b))
-    // }
       
+      oc: function(a, b) {
+        this.sum = new Sum(a, b);
+      }
   
-  
-    oc: function(nodes) {
-      alert(nodes)
+    //oc: function() {
+    
+   //   alert(nodes)
         
       // this.chart = new OrgChart(this.$refs.tree, {
-      //   nodes: this.nodes
-      // });
-    }
+      //   nodes: nodes
+      // })
+      
+   // }
   },
-  
-  
 
     beforeMount(){
-         this.oc(this.nodes)
+         this.oc(3, 2)
     }
 
   }

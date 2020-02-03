@@ -1,5 +1,6 @@
-export default {
-    Sum(a, b) {
-        return a + b;
-    } 
+
+var Sum = function(a, b) {
+    alert(a + b);
 }
+
+export default Sum;
