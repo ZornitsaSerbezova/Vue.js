@@ -1,13 +1,13 @@
 <template>
      <!-- <h1>OrgChart</h1> -->
-      <div id="tree" ref="tree">sdfsdf</div>
+      <div id="tree" ref="tree"></div>
       <!-- <a @click="oc">Click me!</a> -->
 </template>
 
 <script>
-//import OrgChart from '@balkangraph/orgchart.js/orgchart'
+import OrgChart from '@balkangraph/orgchart.js/orgchart'
 
-import  Print  from './print'
+//import  Print  from './print'
 
 
 
@@ -30,27 +30,27 @@ export default {
 
 
   methods: {
-      
-    oc: function(x) {
-        this.alertNodes = new Print(x);
-      }
-  
-    //oc: function() {
+
+     
+     oc: function(domEl, x) {
     
-   //   alert(nodes)
-        
-      // this.chart = new OrgChart(this.$refs.tree, {
-      //   nodes: nodes
-      // });
+    debugger;
+    //   //this.alertNodes = new Print(x);
+
+this.chart = new OrgChart(domEl, {
+        x
+      });
       
-   // }
-    },
+     }
+  },
+    
 
-    beforeMount(){
-         this.oc(this.nodes)
-    }
+  beforeMount(){
 
+    this.oc(this.$refs.tree, this.nodes)
   }
+
+}
 
 
 </script>
