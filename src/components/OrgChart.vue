@@ -12,6 +12,7 @@ import OrgChart from '@balkangraph/orgchart.js/orgchart'
 
 
 export default {
+
     name: 'tree',
     data() {
  
@@ -34,18 +35,18 @@ export default {
      
      oc: function(domEl, x) {
     
-    debugger;
+
     //   //this.alertNodes = new Print(x);
 
 this.chart = new OrgChart(domEl, {
-        x
+        nodes: x
       });
       
      }
   },
     
 
-  beforeMount(){
+  mounted(){
 
     this.oc(this.$refs.tree, this.nodes)
   }
