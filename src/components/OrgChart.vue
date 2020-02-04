@@ -1,15 +1,9 @@
 <template>
-     <!-- <h1>OrgChart</h1> -->
       <div id="tree" ref="tree"></div>
-      <!-- <a @click="oc">Click me!</a> -->
 </template>
 
 <script>
 import OrgChart from '@balkangraph/orgchart.js/orgchart'
-
-//import  Print  from './print'
-
-
 
 export default {
 
