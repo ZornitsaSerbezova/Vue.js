@@ -33,21 +33,16 @@ export default {
   methods: {
 
      
-     oc: function(domEl, x) {
-    
-
-    //   //this.alertNodes = new Print(x);
-
-this.chart = new OrgChart(domEl, {
+    oc: function(domEl, x) {
+      this.chart = new OrgChart(domEl, {
         nodes: x
       });
       
-     }
+    }
   },
     
 
   mounted(){
-
     this.oc(this.$refs.tree, this.nodes)
   }
 
