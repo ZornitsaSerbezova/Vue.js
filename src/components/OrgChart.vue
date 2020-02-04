@@ -30,12 +30,15 @@ export default {
     },
 
 
-  methods: {
-
-     
+  methods: {   
     oc: function(domEl, x) {
       this.chart = new OrgChart(domEl, {
-        nodes: x
+        nodes: x,
+        nodeBinding: {
+            field_0: "name",
+            field_1: "title",
+            img_0: "img"
+        }
       });
       
     }
